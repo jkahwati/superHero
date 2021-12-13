@@ -16,6 +16,7 @@ public class SuperheroController {
 
     @PostMapping
     public SuperHero addSuperHero(@RequestBody SuperHero superHero) {
+        System.out.println(superHero.toString());
         return superHeroRepository.save(superHero);
     }
 
