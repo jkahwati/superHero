@@ -1,7 +1,8 @@
 package com.in2.superHero.controller;
 
 import com.in2.superHero.model.SuperHero;
-import com.in2.superHero.repository.SuperHeroRepository;
+import com.in2.superHero.repository.SuperheroRepository;
+import com.in2.superHero.service.SuperheroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -12,7 +13,9 @@ import java.util.Optional;
 public class SuperheroController {
 
     @Autowired
-    SuperHeroRepository superHeroRepository;
+    SuperheroRepository superHeroRepository;
+    @Autowired
+    SuperheroService superheroService;
 
     @PostMapping
     public SuperHero addSuperHero(@RequestBody SuperHero superHero) {
@@ -21,13 +24,18 @@ public class SuperheroController {
     }
 
     @GetMapping
-    public List<SuperHero> getAllSuperHeros() {
-        return superHeroRepository.findAll();
+    public List<SuperHero> getAllSuperHeros(@RequestParam(required = false) String name) {
+        return superheroService.getAllSuperheros(name);
     }
 
     @GetMapping("/{id}")
-    public Optional<SuperHero> findSuperheroById(@PathVariable Long id) {
-        return superHeroRepository.findById(id);
+    public Optional<SuperHero> findAllByNameContaining(@PathVariable Long id) {
+        return superheroService.findById(id);
     }
+
+//    @PutMapping("/{id}")
+//    public Optional<SuperHero> updateSuperhero(@PathVariable String id) {
+//        return
+//    }
 
 }

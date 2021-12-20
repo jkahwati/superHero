@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="577b8dcd-46f4-454a-ac38-fa1522bb033d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/model/Appearance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/model/Biography.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/model/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/model/PowerStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/repository/SuperheroRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/service/SuperheroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/service/SuperheroServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -20,11 +15,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/in2/superHero/controller/SuperheroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/controller/SuperheroController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/in2/superHero/model/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/model/SuperHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/in2/superHero/repository/SuperHeroRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +118,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.in2.superHero.service" />
       <recent name="com.in2.superHero.model" />
     </key>
   </component>
