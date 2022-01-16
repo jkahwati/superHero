@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Data
 public class PowerStats {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String intelligence;
     private String strength;

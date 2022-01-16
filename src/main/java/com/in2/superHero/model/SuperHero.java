@@ -8,8 +8,9 @@ import javax.persistence.*;
 @Data
 public class SuperHero {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+//    @Column(unique=true)
     private String name;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "powerStatsId", referencedColumnName = "id")

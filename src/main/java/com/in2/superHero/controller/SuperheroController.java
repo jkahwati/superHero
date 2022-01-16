@@ -4,6 +4,7 @@ import com.in2.superHero.model.SuperHero;
 import com.in2.superHero.repository.SuperheroRepository;
 import com.in2.superHero.service.SuperheroService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
@@ -18,9 +19,8 @@ public class SuperheroController {
     SuperheroService superheroService;
 
     @PostMapping
-    public SuperHero addSuperHero(@RequestBody SuperHero superHero) {
-        System.out.println(superHero.toString());
-        return superHeroRepository.save(superHero);
+    public ResponseEntity<SuperHero> addSuperHero(@RequestBody SuperHero superHero) {
+        return superheroService.addSuperhero(superHero);
     }
 
     @GetMapping
@@ -33,9 +33,9 @@ public class SuperheroController {
         return superheroService.findById(id);
     }
 
-//    @PutMapping("/{id}")
-//    public Optional<SuperHero> updateSuperhero(@PathVariable String id) {
-//        return
-//    }
+    @PutMapping
+    public ResponseEntity<SuperHero> updateSuperhero(@RequestBody SuperHero superHero) {
+        return superheroService.update(superHero);
+    }
 
 }

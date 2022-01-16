@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Data
 public class Appearance {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String gender;
     private String race;
