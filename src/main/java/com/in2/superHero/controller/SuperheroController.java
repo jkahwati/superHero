@@ -39,7 +39,7 @@ public class SuperheroController {
         return superheroService.update(superHero);
     }
 
-    @DeleteMapping("/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> deleteSuperhero(@PathVariable Long id) {
         return superheroService.deleteSuperhero(id);
     }

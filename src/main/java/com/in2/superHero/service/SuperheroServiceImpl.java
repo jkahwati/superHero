@@ -1,13 +1,17 @@
 package com.in2.superHero.service;
 
+import com.in2.superHero.model.ErrorResponse;
 import com.in2.superHero.model.RecordNotFoundException;
 import com.in2.superHero.model.SuperHero;
 import com.in2.superHero.repository.SuperheroRepository;
+import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -51,7 +55,9 @@ public class SuperheroServiceImpl extends Throwable implements SuperheroService 
     public ResponseEntity<String> deleteSuperhero(Long id) {
         if (superheroRepository.existsById(id)) {
             superheroRepository.deleteById(id);
-            return ResponseEntity.status(200).body("Superhero "+ id + " is removed" );
+            Map<String, String> messageMapper = new HashMap<String,String>();
+            messageMapper.put("message","Superhero is removed");
+            return ResponseEntity.ok().body("{\"message\":\"Superhero is removed\"}");
         } else {
             throw new RecordNotFoundException("Invalid Superhero id: " + id);
         }

@@ -17,8 +17,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/in2/superHero/controller/SuperheroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/controller/SuperheroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/in2/superHero/repository/SuperheroRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/repository/SuperheroRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/in2/superHero/service/SuperheroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/service/SuperheroService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/in2/superHero/service/SuperheroServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/in2/superHero/service/SuperheroServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
