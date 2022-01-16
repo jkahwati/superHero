@@ -8,6 +8,7 @@ import java.util.Optional;
 
 public interface SuperheroService {
     List<SuperHero>  getAllSuperheros(String name);
+    ResponseEntity<String> deleteSuperhero(Long id);
     ResponseEntity<SuperHero> addSuperhero (SuperHero superHero);
     Optional<SuperHero> findById(Long id);
     ResponseEntity<SuperHero> update(SuperHero superHero);

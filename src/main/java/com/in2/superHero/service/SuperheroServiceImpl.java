@@ -48,5 +48,14 @@ public class SuperheroServiceImpl extends Throwable implements SuperheroService 
         return ResponseEntity.status(200).body(superheroRepository.save(superHero));
     }
 
+    public ResponseEntity<String> deleteSuperhero(Long id) {
+        if (superheroRepository.existsById(id)) {
+            superheroRepository.deleteById(id);
+            return ResponseEntity.status(200).body("Superhero "+ id + " is removed" );
+        } else {
+            throw new RecordNotFoundException("Invalid Superhero id: " + id);
+        }
+    }
+
 }
 
