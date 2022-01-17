@@ -16,8 +16,6 @@ import java.util.Optional;
 public class SuperheroController {
 
     @Autowired
-    SuperheroRepository superHeroRepository;
-    @Autowired
     SuperheroService superheroService;
 
     @PostMapping
