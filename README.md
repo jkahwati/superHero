@@ -1,7 +1,12 @@
 # SUPERHERO-API 
 
 ## ¿Que es este repositorio? ##
-API de gestión de Superheroes
+API de gestión de Superheroes (CRUD)
+
+## Tecnologías  
+Java 11  
+H2
+
 
 ## ¿Como levantar la api?
 
@@ -283,10 +288,4 @@ Colección de postman:
 https://www.getpostman.com/collections/c6aab0578fddb0ae426c  
 
 Elaborado por: Jesús Kahwati
-
-
-
-
-
-
-
+~~~~
