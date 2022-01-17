@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.in2.superHero.service.SuperheroServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-17T00:43:45" hostname="jekahwati-ThinkPad-T480" time="0.14">
+  <properties/>
+  <testcase name="Should find a Superhero" classname="com.in2.superHero.service.SuperheroServiceImplTest" time="0.11"/>
+  <testcase name="Should remove a Superhero" classname="com.in2.superHero.service.SuperheroServiceImplTest" time="0.029"/>
+  <system-out><![CDATA[Optional[SuperHero(id=1, name=Superman, powerStats=null, biography=null, appearance=null, image=null)]
+<200 OK OK,{"message":"Superhero is removed"},[]>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

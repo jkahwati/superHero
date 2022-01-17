@@ -1,14 +1,11 @@
 package com.in2.superHero.service;
 
-import com.in2.superHero.model.ErrorResponse;
 import com.in2.superHero.model.RecordNotFoundException;
 import com.in2.superHero.model.SuperHero;
 import com.in2.superHero.repository.SuperheroRepository;
-import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,18 +30,18 @@ public class SuperheroServiceImpl extends Throwable implements SuperheroService 
     }
 
     public Optional<SuperHero> findById(Long id) {
-        if (superheroRepository.existsById(id)) {
-            return superheroRepository.findById(id);
-        } else {
-            throw new RecordNotFoundException("Invalid Superhero id: " + id);
-        }
+            Optional<SuperHero> superHero = superheroRepository.findById(id);
+            if (superHero.isPresent()) {
+                return superHero;
+            }
+            throw new RecordNotFoundException("Superhero: " + id + " not found");
     }
 
     public ResponseEntity<SuperHero>  update(SuperHero superHero)  {
         if (superheroRepository.existsById(superHero.getId())) {
             return ResponseEntity.status(200).body(superheroRepository.save(superHero));
         } else {
-            throw new RecordNotFoundException("Invalid Superhero id: " + superHero.getId());
+            throw new RecordNotFoundException("Superhero: " + superHero.getId() + " not found");
         }
     }
 

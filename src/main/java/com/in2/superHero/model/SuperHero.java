@@ -1,11 +1,15 @@
 package com.in2.superHero.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class SuperHero {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
